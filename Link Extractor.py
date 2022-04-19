@@ -15,9 +15,9 @@ def link_extract():
 				    all_links.append(j)
 
 
-domain = input("Lütfen Bir Domain Giriniz: ")
+domain = input("Please Enter the Domain: ")
 if domain.startswith("https") or domain.startswith("http"):
-    domain = input("Lütfen Başinda 'http' ve ya 'https' olmadan tekrar girin: ")
+    domain = input("Please Try Again(Without 'http://' or 'https://'): ")
     url = domain.split(".")
     link_extract()
 else:
